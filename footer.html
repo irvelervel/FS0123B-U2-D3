@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      crossorigin="anonymous"
+    />
+    <title>Footer in flex</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 0;
+      }
+
+      footer {
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .top {
+        background-color: #04a2b0;
+        flex-grow: 2.5;
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .top p {
+        margin: 0 0 10px 0;
+        font-size: 1.1em;
+      }
+
+      .medium {
+        background-color: #015d5f;
+        flex-grow: 0.5;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .medium ul {
+        list-style-type: none;
+        padding: 0;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .medium ul li {
+        color: white;
+      }
+
+      .bottom {
+        background-color: #9ed3ca;
+        flex-grow: 1.5;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .bottom p {
+        margin: 0 0 5px 0;
+      }
+
+      .icons-container {
+        font-size: 2em;
+        display: flex;
+        justify-content: space-around;
+        width: 30%;
+      }
+
+      .top a {
+        color: white;
+      }
+
+      /* CSS AGGIUNTIVO PER RENDERE STICKY IL FOOTER */
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      .content {
+        flex-grow: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="content">
+      <!-- <img src="https://placekitten.com/500" />
+      <img src="https://placekitten.com/500" />
+      <img src="https://placekitten.com/500" />
+      <img src="https://placekitten.com/500" />
+      <img src="https://placekitten.com/500" /> -->
+    </div>
+    <footer>
+      <div class="top">
+        <p>Questions?</p>
+        <p>
+          Write us at <a href="mailto:email@example.com">example@example.com</a>
+        </p>
+        <div class="icons-container">
+          <i class="fa fa-facebook-square"></i>
+          <i class="fa fa-twitter-square"></i>
+          <i class="fa fa-youtube-play"></i>
+          <i class="fa fa-instagram"></i>
+        </div>
+      </div>
+      <div class="medium">
+        <ul>
+          <li>Privacy Policy</li>
+          <li>Terms of Use</li>
+          <li>Copyright</li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <p><span id="currentYear"></span>, all rights reserved.</p>
+        <p>Created with <i class="fa fa-heart-o"></i> at EPICODE</p>
+      </div>
+    </footer>
+    <script>
+      // selezioniamo lo span con id "currentYear" via JS in modo
+      // da riempirlo dopo il caricamento della pagina con l'anno
+      // corrente
+      let currentYearReference = document.getElementById('currentYear')
+      currentYearReference.innerText = new Date().getFullYear()
+      // new Date().getFullYear() torna l'anno in corso
+    </script>
+  </body>
+</html>

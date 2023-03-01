@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flex Cards</title>
+    <style>
+      .card {
+        width: 300px;
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
+        margin: 10px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .card-content {
+        padding: 0 20px;
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+      }
+
+      .card button {
+        color: white;
+        background-color: grey;
+        border: 0;
+        width: 100%;
+        margin-bottom: 10px;
+        padding: 10px;
+      }
+
+      main.cards {
+        display: flex;
+        flex-wrap: wrap;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="cards">
+      <div class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="card-content">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ducimus
+            minima aliquam facere excepturi vero tempora aperiam harum
+            consequatur iste ad sint accusantium reprehenderit, corrupti
+            impedit, nulla saepe? Tenetur, non.
+          </p>
+          <button>Go to Page</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="card-content">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ducimus
+            minima aliquam facere excepturi
+          </p>
+          <button>Go to Page</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="card-content">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur</p>
+          <button>Go to Page</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="card-content">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ducimus
+            minima aliquam facere excepturi vero tempora aperiam harum
+            consequatur iste ad sint accusantium reprehenderit, corrupti
+            impedit, nulla saepe? Tenetur, non.
+          </p>
+          <button>Go to Page</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="card-content">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea ducimus
+            minima aliquam facere excepturi vero tempora aperiam harum
+            consequatur iste ad sint accusantium rep
+          </p>
+          <button>Go to Page</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://placekitten.com/300" alt="kitten" />
+        <div class="card-content">
+          <h3>Lorem ipsum dolor sit amet</h3>
+          <p>Lorem ipsum dolor sit amet</p>
+          <button>Go to Page</button>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
